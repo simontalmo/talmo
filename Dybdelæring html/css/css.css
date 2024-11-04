@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: montserrat;
+    text-align: center;
+    line-height: 30px;
+    
+      
+}
+
+nav{
+    background: rgb(32, 54, 54);
+    height: 80px;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 150px;
+    font-weight: bold;
+}
+nav ul{
+    float: center;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 170px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+font-face {
+    font-family: '911 Porscha';
+    src: url('fonter/911porschav3.tff') format('truetype'),
+         url('fonter/911porschav33d.tff') format('truetype'),
+         url('fonter/911porschav3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    font-family: '911 Porscha';
+    src: url('fonter/911porschav33d.ttf') format('truetype');
+    background: darkslategray;
+    height: 80px;
+    width: 100vw;
+    text-align: 100px;
+    position: relative;
+}
+
+nav{
+    text-align: left;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    height: 100px;
+    font-size: 40px;
+    font-family: '911 Porscha';
+    src: url('fonter/911porschav33d.ttf') format('truetype');
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    right: 610px;
+}
+
+.about h5 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Models Section */
+.models {
+    padding: 50px;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+.models h5 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.model-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.model-item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.model-item:hover {
+    transform: scale(1.05);
+}
+
+h6 {
+    font-family: '911 Porscha';
+    src: url('fonter/911porschav3.ttf') format('truetype');
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.938);
+
+}
+
+section {
+    padding: 50px;
+    font-size: 19px;
+}
+
+header {   
+    background-color: #2f4f4f;
+
+}
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h5 , p {
+    margin-top: 1.5rem;
+    margin: 30px;  
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.history1 {
+    text-align: left;
+   
+}
+
+.what {
+    text-align: right;
+    position: relative;
+    left: 1200px;
+}
+
+h5 {    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        width: 100%;
+    }
+    nav ul li{
+        line-height: 50px;
+    }
+    nav ul li a{
+        font-size: 14px;
+        padding: 5px 100px;
+    }
+    .about {
+        right: 0;
+    }
+    .model-item {
+        width: 100%;
+    }
+    .model-gallery {
+        flex-direction: column;
+    }
+    .what {
+        left: 0;
+    }
+}
+
+.footer-text {
+    color: black;
+    font-family: cursive;
+}

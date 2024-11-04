@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/css.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porsche info</title>
+
+        <style>
+            @font-face {
+                font-family: '911 Porscha';
+                src: url('fonter/911porschav33d.ttf') format('truetype');
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <label class="logo" style="font-family: '911 Porscha'">Porsche</label>
+        
+        <img src="pors_transparent.png" alt="Logo" style="width: 140px; height: 80px; position: absolute; top: 0; left: 0;">   
+    </header>
+
+    
+</style>
+/*************  ✨ Codeium Command 🌟  *************/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Models</title>
+    <style>
+        /* Basic styling */
+        body {
+            background-image: url("Alle-porsche.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header section with links to car models */
+        .header {
+            background-color: #2f4f4f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header a {
+            color: rgb(255, 255, 255);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .header a:hover {
+            color: #ccc;
+        }
+
+        /* Hidden content section for each car model */
+        .car-section {
+            display: none; /* Hidden by default */
+            padding: 20px;
+            background-color: #fffdfd;
+            background-image: url("Alle-porsche.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .car-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #e5e5e5;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ccc;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2f4f4f;
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+  
+    </header>
+
+    <nav style="position: absolute; top: 80px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="manufactors.html">custom</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with clickable model names -->
+    <div class="header">
+        <a onclick="toggleSection('model911')">Porsche 911</a>
+        <a onclick="toggleSection('model718')">Porsche 718</a>
+        <a onclick="toggleSection('modelTaycan')">Porsche Taycan</a>
+        <a onclick="toggleSection('modelMacan')">Porsche Macan</a>
+        <a onclick="toggleSection('modelCayenne')">Porsche Cayenne</a>
+        <a onclick="toggleSection('modelPanamera')">Porsche Panamera</a>
+    </div>
+
+    <!-- Car model sections with hidden content -->
+    <div id="model911" class="car-section">
+        <img src="911.webp" alt="Porsche 911 Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/911/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <div id="model718" class="car-section">
+        <img src="718.webp" alt="Porsche 718 Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/718/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <div id="modelTaycan" class="car-section">
+        <img src="taycan.WEBP" alt="Porsche Taycan Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/taycan/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <div id="modelMacan" class="car-section">
+        <img src="macan.jpg" alt="Porsche Macan Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/macan/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <div id="modelCayenne" class="car-section">
+        <img src="cayenne.WEBP" alt="Porsche Cayenne Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/cayenne/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <div id="modelPanamera" class="car-section">
+        <img src="panamera.png" alt="Porsche Panamera Image">
+        <br>
+        <a href="https://www.porsche.com/usa/models/panamera/" class="button" target="_blank">Customize</a>
+    </div>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function toggleSection(id) {
+            // Get all car sections
+            const sections = document.querySelectorAll('.car-section');
+            
+            // Hide all sections except the clicked one
+            sections.forEach(section => {
+                if (section.id === id) {
+                    // Toggle visibility of clicked section
+                    section.style.display = section.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    // Hide other sections
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
+
